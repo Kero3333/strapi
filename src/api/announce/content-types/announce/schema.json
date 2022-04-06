@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announces",
+  "info": {
+    "singularName": "announce",
+    "pluralName": "announces",
+    "displayName": "Announce",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publication_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "number_of_like": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}
