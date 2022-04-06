@@ -52,6 +52,12 @@
       "relation": "oneToOne",
       "target": "api::carpool.carpool",
       "inversedBy": "announce"
+    },
+    "activity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activity.activity",
+      "inversedBy": "announce"
     }
   }
 }

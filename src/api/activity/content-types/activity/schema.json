@@ -4,7 +4,8 @@
   "info": {
     "singularName": "activity",
     "pluralName": "activities",
-    "displayName": "Activities"
+    "displayName": "Activity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -38,7 +39,8 @@
     "announce": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::announce.announce"
+      "target": "api::announce.announce",
+      "inversedBy": "activity"
     }
   }
 }
