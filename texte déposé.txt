@@ -1,1 +1,0 @@
-/home/kevin/Formation/Back/PROJET-STUDIER/my-project/.gitignore
