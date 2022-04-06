@@ -28,6 +28,30 @@
       "type": "integer",
       "required": true,
       "default": 0
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event",
+      "inversedBy": "announce"
+    },
+    "housing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::housing.housing",
+      "inversedBy": "announce"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "announces"
+    },
+    "carpool": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carpool.carpool",
+      "inversedBy": "announce"
     }
   }
 }

@@ -26,6 +26,12 @@
     "Price": {
       "type": "float",
       "required": true
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "inversedBy": "carpool"
     }
   }
 }

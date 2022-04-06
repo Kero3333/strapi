@@ -29,6 +29,12 @@
     "date": {
       "type": "date",
       "required": true
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "mappedBy": "event"
     }
   }
 }

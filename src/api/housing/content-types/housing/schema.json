@@ -32,6 +32,12 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "mappedBy": "housing"
     }
   }
 }

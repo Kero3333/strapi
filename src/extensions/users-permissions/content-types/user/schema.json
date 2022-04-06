@@ -70,6 +70,12 @@
     "lastname": {
       "type": "string",
       "required": true
+    },
+    "announces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::announce.announce",
+      "mappedBy": "user"
     }
   }
 }
