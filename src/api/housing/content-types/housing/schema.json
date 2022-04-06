@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housings",
+  "info": {
+    "singularName": "housing",
+    "pluralName": "housings",
+    "displayName": "Housing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "postal_code": {
+      "type": "string",
+      "required": false
+    },
+    "street": {
+      "type": "string",
+      "required": false
+    },
+    "bedroom": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
