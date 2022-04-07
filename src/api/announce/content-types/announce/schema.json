@@ -64,6 +64,9 @@
       "relation": "oneToOne",
       "target": "api::comentaire.comentaire",
       "inversedBy": "announce"
+    },
+    "picture": {
+      "type": "string"
     }
   }
 }

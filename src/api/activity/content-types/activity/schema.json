@@ -40,7 +40,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::announce.announce",
-      "inversedBy": "activity"
+      "mappedBy": "activity"
     }
   }
 }

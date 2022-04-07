@@ -31,7 +31,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::announce.announce",
-      "inversedBy": "carpool"
+      "mappedBy": "carpool"
     }
   }
 }

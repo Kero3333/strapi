@@ -82,6 +82,9 @@
       "relation": "oneToMany",
       "target": "api::comentaire.comentaire",
       "mappedBy": "users_permissions_user"
+    },
+    "picture_profile": {
+      "type": "string"
     }
   }
 }
