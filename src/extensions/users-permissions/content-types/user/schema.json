@@ -84,7 +84,9 @@
       "mappedBy": "users_permissions_user"
     },
     "picture_profile": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "https://res.cloudinary.com/dvpi39ag2/image/upload/v1649318032/s-l300_xza3mk.png"
     }
   }
 }
