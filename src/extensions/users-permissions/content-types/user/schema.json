@@ -76,6 +76,12 @@
       "relation": "oneToMany",
       "target": "api::announce.announce",
       "mappedBy": "user"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comentaire.comentaire",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

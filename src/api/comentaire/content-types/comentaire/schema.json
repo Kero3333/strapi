@@ -15,6 +15,18 @@
     "opinion": {
       "type": "text",
       "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "comments"
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "inversedBy": "comment"
     }
   }
 }

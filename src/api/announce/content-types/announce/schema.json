@@ -58,6 +58,12 @@
       "relation": "oneToOne",
       "target": "api::activity.activity",
       "inversedBy": "announce"
+    },
+    "comment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comentaire.comentaire",
+      "inversedBy": "announce"
     }
   }
 }
