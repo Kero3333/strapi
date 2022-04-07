@@ -67,6 +67,12 @@
     },
     "picture": {
       "type": "string"
+    },
+    "job": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::job.job",
+      "inversedBy": "announce"
     }
   }
 }
