@@ -86,7 +86,7 @@
     "picture_profile": {
       "type": "string",
       "required": true,
-      "default": "https://res.cloudinary.com/dvpi39ag2/image/upload/v1649318032/s-l300_xza3mk.png"
+      "default": "https://res.cloudinary.com/dvpi39ag2/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1649401576/postit_aw2yaq.jpg"
     }
   }
 }
