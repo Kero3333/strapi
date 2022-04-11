@@ -72,6 +72,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "favoris": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favori.favori",
+      "inversedBy": "announces"
     }
   }
 }

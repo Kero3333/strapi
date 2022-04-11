@@ -87,6 +87,12 @@
       "type": "string",
       "required": true,
       "default": "https://res.cloudinary.com/dvpi39ag2/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1649401576/postit_aw2yaq.jpg"
+    },
+    "favoris": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favori.favori",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
