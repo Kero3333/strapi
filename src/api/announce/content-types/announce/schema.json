@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "publication_date": {
-      "type": "datetime",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true

@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "activity": {
-      "type": "string"
-    },
     "date": {
       "type": "date"
     },
@@ -41,6 +38,15 @@
       "relation": "oneToOne",
       "target": "api::announce.announce",
       "mappedBy": "activity"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "sport",
+        "culture",
+        "étude"
+      ],
+      "required": true
     }
   }
 }
