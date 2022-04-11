@@ -73,6 +73,9 @@
       "relation": "oneToOne",
       "target": "api::job.job",
       "inversedBy": "announce"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

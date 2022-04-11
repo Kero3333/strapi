@@ -39,7 +39,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::announce.announce",
-      "inversedBy": "job"
+      "mappedBy": "job"
     }
   }
 }
