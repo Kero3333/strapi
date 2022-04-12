@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "announce_type": {
+      "type": "enumeration",
+      "enum": [
+        "activity",
+        "carpool",
+        "diverse",
+        "event",
+        "housing",
+        "job"
+      ]
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "inversedBy": "type"
+    },
+    "sub_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-type.sub-type",
+      "inversedBy": "type"
+    }
+  }
+}

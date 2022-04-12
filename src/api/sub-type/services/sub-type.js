@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * carpool service.
+ * sub-type service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::carpool.carpool');
+module.exports = createCoreService('api::sub-type.sub-type');
