@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favoris",
+  "info": {
+    "singularName": "favori",
+    "pluralName": "favoris",
+    "displayName": "favori"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "favoris"
+    },
+    "announces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::announce.announce",
+      "mappedBy": "favoris"
+    }
+  }
+}

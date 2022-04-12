@@ -59,8 +59,17 @@
     "type": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::type.type",
-      "mappedBy": "announce"
+      "target": "api::job.job",
+      "inversedBy": "announce"
+    },
+    "link": {
+      "type": "string"
+    },
+    "favoris": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favori.favori",
+      "inversedBy": "announces"
     }
   }
 }
