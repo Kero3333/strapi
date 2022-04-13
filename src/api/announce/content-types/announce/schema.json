@@ -40,36 +40,17 @@
     "picture": {
       "type": "string"
     },
-    "street": {
-      "type": "string"
-    },
-    "city": {
-      "type": "string"
-    },
-    "postal_code": {
-      "type": "integer"
-    },
-    "link": {
-      "type": "string"
-    },
-    "date": {
-      "type": "date",
-      "required": true
-    },
     "type": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::job.job",
-      "inversedBy": "announce"
-    },
-    "link": {
-      "type": "string"
+      "target": "api::type.type",
+      "mappedBy": "announce_id"
     },
     "favoris": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::favori.favori",
-      "inversedBy": "announces"
+      "inversedBy": "announces_id"
     }
   }
 }

@@ -92,7 +92,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::favori.favori",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "users_id"
     }
   }
 }

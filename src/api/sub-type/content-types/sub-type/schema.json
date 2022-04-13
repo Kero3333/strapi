@@ -4,37 +4,37 @@
   "info": {
     "singularName": "sub-type",
     "pluralName": "sub-types",
-    "displayName": "Sub_type",
-    "description": ""
+    "displayName": "sub_type"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "announce_sub_type": {
+    "label": {
       "type": "enumeration",
       "enum": [
-        "Appartement",
-        "Apprentissage",
-        "CDD",
         "CDI",
-        "Concert",
-        "Culture",
-        "Emploi saisonnier",
-        "job étudiant",
-        "Maison",
-        "Soirée",
-        "Sport",
-        "Stage"
-      ],
-      "required": true
+        "CDD",
+        "stage",
+        "alternance",
+        "job_etudiant",
+        "interim",
+        "divers",
+        "concert",
+        "spectacle",
+        "soirée",
+        "forum",
+        "représentation",
+        "appartement",
+        "maison"
+      ]
     },
     "type": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::type.type",
-      "inversedBy": "sub_type"
+      "mappedBy": "sub_type"
     }
   }
 }
