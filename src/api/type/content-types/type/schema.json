@@ -25,16 +25,16 @@
       "default": "autres",
       "required": true
     },
-    "announce_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::announce.announce",
-      "inversedBy": "type"
-    },
     "sub_types": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::sub-type.sub-type",
+      "mappedBy": "type"
+    },
+    "announce_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::announce.announce",
       "mappedBy": "type"
     }
   }
