@@ -31,11 +31,11 @@
       "target": "api::announce.announce",
       "inversedBy": "type"
     },
-    "sub_type": {
+    "sub_types": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::sub-type.sub-type",
-      "inversedBy": "type"
+      "mappedBy": "type"
     }
   }
 }

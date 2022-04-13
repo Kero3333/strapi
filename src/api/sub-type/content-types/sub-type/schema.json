@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sub-type",
     "pluralName": "sub-types",
-    "displayName": "sub_type"
+    "displayName": "sub_type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,14 +28,18 @@
         "forum",
         "représentation",
         "appartement",
-        "maison"
+        "maison",
+        "sport",
+        "théâtre",
+        "cinéma",
+        "pêche"
       ]
     },
     "type": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::type.type",
-      "mappedBy": "sub_type"
+      "inversedBy": "sub_types"
     }
   }
 }
