@@ -38,7 +38,8 @@
       "inversedBy": "announce"
     },
     "picture": {
-      "type": "string"
+      "type": "string",
+      "default": "https://res.cloudinary.com/dvpi39ag2/image/upload/v1649837549/img/student-tel_aiz016.png"
     },
     "type": {
       "type": "relation",
