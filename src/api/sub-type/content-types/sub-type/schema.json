@@ -40,6 +40,12 @@
       "relation": "manyToOne",
       "target": "api::type.type",
       "inversedBy": "sub_types"
+    },
+    "announce": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::announce.announce",
+      "inversedBy": "sub_types"
     }
   }
 }

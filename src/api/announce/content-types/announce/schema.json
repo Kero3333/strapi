@@ -51,6 +51,12 @@
       "relation": "manyToOne",
       "target": "api::favori.favori",
       "inversedBy": "announces_id"
+    },
+    "sub_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-type.sub-type",
+      "mappedBy": "announce"
     }
   }
 }
