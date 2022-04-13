@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  housing controller
+ *  sub-type controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::housing.housing');
+module.exports = createCoreController('api::sub-type.sub-type');

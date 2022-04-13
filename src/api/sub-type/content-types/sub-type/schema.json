@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_types",
+  "info": {
+    "singularName": "sub-type",
+    "pluralName": "sub-types",
+    "displayName": "Sub_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "announce_sub_type": {
+      "type": "enumeration",
+      "enum": [
+        "Appartement",
+        "Apprentissage",
+        "CDD",
+        "CDI",
+        "Concert",
+        "Culture",
+        "Emploi saisonnier",
+        "job étudiant",
+        "Maison",
+        "Soirée",
+        "Sport",
+        "Stage"
+      ],
+      "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type.type",
+      "inversedBy": "sub_type"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * activity router.
+ * sub-type router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::activity.activity');
+module.exports = createCoreRouter('api::sub-type.sub-type');
