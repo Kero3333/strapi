@@ -18,9 +18,9 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "favoris"
     },
-    "announces_id": {
+    "announces_ids": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::announce.announce",
       "inversedBy": "favorises"
     }

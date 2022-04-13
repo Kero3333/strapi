@@ -55,9 +55,9 @@
     },
     "favorises": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::favori.favori",
-      "mappedBy": "announces_id"
+      "inversedBy": "announces_ids"
     }
   }
 }
