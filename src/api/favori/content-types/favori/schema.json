@@ -4,7 +4,8 @@
   "info": {
     "singularName": "favori",
     "pluralName": "favoris",
-    "displayName": "favori"
+    "displayName": "favori",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,9 +20,9 @@
     },
     "announces_id": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::announce.announce",
-      "mappedBy": "favoris"
+      "inversedBy": "favorises"
     }
   }
 }
