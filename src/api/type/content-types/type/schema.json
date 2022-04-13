@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "logement",
+        "evenement",
+        "covoiturage",
+        "activite",
+        "emploi",
+        "autres"
+      ],
+      "default": "autres",
+      "required": true
+    },
+    "announce_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::announce.announce",
+      "inversedBy": "type"
+    },
+    "sub_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-type.sub-type",
+      "inversedBy": "type"
+    }
+  }
+}

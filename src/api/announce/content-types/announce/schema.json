@@ -25,35 +25,11 @@
       "required": true,
       "default": 0
     },
-    "event": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event.event",
-      "inversedBy": "announce"
-    },
-    "housing": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::housing.housing",
-      "inversedBy": "announce"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "announces"
-    },
-    "carpool": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::carpool.carpool",
-      "inversedBy": "announce"
-    },
-    "activity": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::activity.activity",
-      "inversedBy": "announce"
     },
     "comment": {
       "type": "relation",
@@ -64,11 +40,17 @@
     "picture": {
       "type": "string"
     },
-    "job": {
+    "type": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::job.job",
-      "inversedBy": "announce"
+      "target": "api::type.type",
+      "mappedBy": "announce_id"
+    },
+    "favoris": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favori.favori",
+      "inversedBy": "announces_id"
     }
   }
 }
