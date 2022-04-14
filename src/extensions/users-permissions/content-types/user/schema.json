@@ -90,9 +90,9 @@
     },
     "favoris": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::favori.favori",
-      "mappedBy": "users_id"
+      "inversedBy": "users_id"
     }
   }
 }
