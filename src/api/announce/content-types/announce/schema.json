@@ -22,7 +22,7 @@
     },
     "number_of_like": {
       "type": "integer",
-      "required": true,
+      "required": false,
       "default": 0
     },
     "user": {
