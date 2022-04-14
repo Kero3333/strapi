@@ -14,7 +14,7 @@
   "attributes": {
     "users_id": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "favoris"
     },
